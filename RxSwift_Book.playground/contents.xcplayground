@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' buildActiveScheme='true'>
+    <pages>
+        <page name='RxSwiftStudy'/>
+        <page name='What is Reactive X'/>
+        <page name='What is RxSwift'/>
+        <page name='Asynchronous Programming'/>
+        <page name='mutable&amp;immutable state'/>
+        <page name='First-Citizen Object'/>
+        <page name='Imperative Programming'/>
+        <page name='Declarative Programming'/>
+        <page name='RxSwift Components'/>
+        <page name='Observables'/>
+        <page name='Operators'/>
+        <page name='Schedulers'/>
+        <page name='Subject'/>
+        <page name='How to Import'/>
+    </pages>
+</playground>
