@@ -1,5 +1,5 @@
 /*:
- [Previous](@previous)
+ [Previous](What%20is%20Reactive%20X)
  
  # RxSwift 란?
  
@@ -23,5 +23,5 @@
  
  ReactiveX의 오퍼레이터나 동작 방식들을 보면 스위프트의 고차함수들을 이용하니까 좀 더 명확하게는 스위프트의 함수형 프로그래밍을 확장하여 비동기 프로그래밍을 할 수 있게 해 주는 라이브러리! 라고 생각되네요!
  
- [Next](@next)
+ [Next](Asynchronous%20Programming)
  */

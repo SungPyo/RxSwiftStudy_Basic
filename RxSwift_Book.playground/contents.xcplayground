@@ -5,7 +5,7 @@
         <page name='What is Reactive X'/>
         <page name='What is RxSwift'/>
         <page name='Asynchronous Programming'/>
-        <page name='mutable&amp;immutable state'/>
+        <page name='Mutable&amp;Immutable State'/>
         <page name='First-Citizen Object'/>
         <page name='Imperative Programming'/>
         <page name='Declarative Programming'/>

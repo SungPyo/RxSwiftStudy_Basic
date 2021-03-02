@@ -1,9 +1,9 @@
 /*:
- [Previous](@previous)
+ [Previous](RxSwiftStudy)
  
  # ReactiveX 란?
  
- ReactiveX 는 [ReactiveX 홈페이지](링크)에서 다음과 같이 설명하고 있습니다.
+ ReactiveX 는 [ReactiveX 홈페이지](http://reactivex.io/)에서 다음과 같이 설명하고 있습니다.
  
  `An API for asynchronous programming with observable streams`
 
@@ -13,5 +13,5 @@
  
  조금씩 알아가 봅시다!
  
- [Next](@next)
+ [Next](What%20is%20RxSwift)
  */

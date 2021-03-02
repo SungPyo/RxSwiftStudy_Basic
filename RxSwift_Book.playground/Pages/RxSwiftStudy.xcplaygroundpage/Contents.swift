@@ -4,8 +4,8 @@
  오픈채팅Swift, Objective-C Study의 [RxSwift 기초 스터디](https://www.notion.so/RxSwift-213ed9b3dab846cab19ff96c1afe21a4)
  자료입니다.
  
- * Callout(1주차):
- __RxSwift 개요__
+ - Important:
+ __1주차 - RxSwift 개요__
  * [ReactiveX 란?](What%20is%20Reactive%20X)
  * [RxSwift 란?](What%20is%20RxSwift)
  * [비동기 프로그래밍](Asynchronous%20Programming)
@@ -19,4 +19,43 @@
     * [Schedulers](Schedulers)
     * [Subject](Subject)
  * [RxSwift 프로젝트에 임포트 하기](How%20to%20Import)
+ ----
+ - Important:
+ __2주차 - Observables, Subjects__
+ ### 준비중입니다.
+ ## Observables
+ * [Observables 이란?](Notice)
+ * [Observable의 생명주기](Notice)
+    * [마블 다이어그램 (Observable의 시퀀스를 이해하는 방법)](Notice)
+ * [Observable 생성](Notice)
+    * [just, of, from](Notice)
+ * [Observable 구독 (Subscribe)](Notice)
+ * [Disposing과 구독 종료](Notice)
+ * [DisposeBag](Notice)
+ 
+ ## Subjects
+ 
+ * [Subjects 란?](Notice)
+ * [종류별 subjects](Notice)
+    * [PublishSubject](Notice)
+    * [BehaviorSubject](Notice)
+    * [ReplaySubject](Notice)
+ * [BehaviorRelay](Notice)
+ ----
+ - Important:
+ __3주차 - Operators 1__
+ ### 준비중입니다.
+ ----
+ - Important:
+ __4주차 - Operators 2__
+ ### 준비중입니다.
+ ----
+ - Important:
+ __5주차 - Scheduler, Error Handling__
+ ### 준비중입니다.
+ ----
+ - Important:
+ __6주차 - RxCocoa__
+ ### 준비중입니다.
+ ----
  */

@@ -1,5 +1,5 @@
 /*:
- [Previous](@previous)
+ [Previous](First-Citizen%20Object)
  
  # Imperative Programming
  
@@ -22,5 +22,5 @@
  
  이해가 가셨나요? 그럼 다음장에서는 선언형 프로그래밍에 대해서 알아봅시다.
 
- [Next](@next)
+ [Next](Declarative%20Programming)
  */

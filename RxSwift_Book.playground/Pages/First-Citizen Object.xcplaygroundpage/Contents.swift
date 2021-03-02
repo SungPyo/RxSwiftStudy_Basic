@@ -1,5 +1,5 @@
 /*:
- [Previous](@previous)
+ [Previous](Mutable&Immutable%20State)
  
  # First-Citizen Object
  
@@ -19,6 +19,7 @@
  */
 let 모든_요소는_할당의_대상이_될_수_있다: (String) -> () = { str in
     print("입력값 = \(str)")
+    
 }
 
 let 모든_요소는_함수의_매개변수가_될_수_있다: (String) -> () = 모든_요소는_할당의_대상이_될_수_있다
@@ -39,5 +40,5 @@ func 모든_요소는_함수의_반환값이_될_수_있다() -> (String) -> () 
  
  RxSwift를 배우기 이전에 알아야 할 개념이니 이해가 가지 않는다면 꼭! 공부하고 넘어가도록 합시다.
  
- [Next](@next)
+ [Next](Imperative%20Programming)
  */

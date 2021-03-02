@@ -1,5 +1,5 @@
 /*:
- [Previous](@previous)
+ [Previous](Imperative%20Programming)
  
  # Declarative Programming
  
@@ -22,5 +22,5 @@
  
  이제 간단한 기본 개념이 끝났습니다. 다음부터는 RxSwift에 대해서 하나씩 알아가 보도록 합시다.
  
- [Next](@next)
+ [Next](RxSwift%20Components)
  */

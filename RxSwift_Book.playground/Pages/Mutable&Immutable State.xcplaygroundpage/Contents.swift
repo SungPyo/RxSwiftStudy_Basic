@@ -1,7 +1,7 @@
 /*:
- [Previous](@previous)
+ [Previous](Asynchronous%20Programming)
  
- # mutable&immutable state
+ # Mutable&Immutable State
  
  이전에는 ReactiveX에 대해서 알아보았습니다.
  
@@ -21,5 +21,5 @@
  
  ReactiveX의 표준을 따르는 Swift라고 하니까 결론적으로 RxSwift는 Swift언어로 비동기 프로그래밍을 할 수 있게 해주는 ReactiveX 라이브러리 라고 할 수 있겠네요.
  
- [Next](@next)
+ [Next](First-Citizen%20Object)
  */

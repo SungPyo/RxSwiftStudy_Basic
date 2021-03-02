@@ -1,6 +1,6 @@
 import Foundation
 /*:
- [Previous](@previous)
+ [Previous](What%20is%20RxSwift)
  
  # Asynchronous Programming
  
@@ -32,5 +32,5 @@ print("함수의 결과를 기다리지 않고 처리\(Thread.isMainThread)")
  
  동시성 프로그래밍은 동시에 실행되는 것 처럼 보이지만 실제로는 여러개의 스레드가 매우 빠른 시간으로 번갈아 가면서 실행되는 프로그래밍 방식입니다.
  
- [Next](@next)
+ [Next](Mutable&Immutable%20State)
  */
