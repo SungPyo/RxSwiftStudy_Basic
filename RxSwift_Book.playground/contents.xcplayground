@@ -15,5 +15,13 @@
         <page name='Schedulers'/>
         <page name='Subject'/>
         <page name='How to Import'/>
+        <page name='Notice'/>
+        <page name='ObservableLifeCycle'/>
+        <page name='MarbleUnderstand'/>
+        <page name='ObservableCreate'/>
+        <page name='ObservableCreate#1'/>
+        <page name='Subscribe'/>
+        <page name='Dispose'/>
+        <page name='DisposeBag'/>
     </pages>
 </playground>

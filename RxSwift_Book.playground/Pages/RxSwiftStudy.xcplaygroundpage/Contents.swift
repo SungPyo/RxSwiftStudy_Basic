@@ -22,21 +22,20 @@
  ----
  - Important:
  __2주차 - Observables, Subjects__
- ### 준비중입니다.
  ## Observables
- * [Observables 이란?](Notice)
- * [Observable의 생명주기](Notice)
-    * [마블 다이어그램 (Observable의 시퀀스를 이해하는 방법)](Notice)
- * [Observable 생성](Notice)
-    * [just, of, from](Notice)
- * [Observable 구독 (Subscribe)](Notice)
- * [Disposing과 구독 종료](Notice)
- * [DisposeBag](Notice)
+ * [Observables 이란?](Observables)
+ * [Observable의 생명주기](ObservableLifeCycle)
+    * [마블 다이어그램 (Observable의 시퀀스를 이해하는 방법)](MarbleUnderstand)
+ * [Observable 생성](ObservableCreate)
+    * [just, of, from](ObservableCreate#1)
+ * [Observable 구독 (Subscribe)](Subscribe)
+ * [Disposing과 구독 종료](Dispose)
+ * [DisposeBag](DisposeBag)
  
  ## Subjects
  
- * [Subjects 란?](Notice)
- * [종류별 subjects](Notice)
+ * [Subjects 란?](Subject)
+ * [종류별 subjects](Subject)
     * [PublishSubject](Notice)
     * [BehaviorSubject](Notice)
     * [ReplaySubject](Notice)
