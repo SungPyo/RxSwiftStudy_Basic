@@ -35,11 +35,10 @@
  ## Subjects
  
  * [Subjects 란?](Subject)
- * [종류별 subjects](Subject)
-    * [PublishSubject](Notice)
-    * [BehaviorSubject](Notice)
-    * [ReplaySubject](Notice)
- * [BehaviorRelay](Notice)
+ * [PublishSubject](PublishSubject)
+ * [BehaviorSubject](BehaviorSubject)
+ * [ReplaySubject](ReplaySubject)
+ * [BehaviorRelay](BehaviorRelay)
  ----
  - Important:
  __3주차 - Operators 1__

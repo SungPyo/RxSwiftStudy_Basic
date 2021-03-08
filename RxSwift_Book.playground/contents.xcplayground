@@ -23,5 +23,9 @@
         <page name='Subscribe'/>
         <page name='Dispose'/>
         <page name='DisposeBag'/>
+        <page name='PublishSubject'/>
+        <page name='BehaviorSubject'/>
+        <page name='ReplaySubject'/>
+        <page name='BehaviorRelay'/>
     </pages>
 </playground>
