@@ -22,5 +22,5 @@ let behaviorRelay: BehaviorRelay<String> = BehaviorRelay<String>(value: "init")
 let publishRelay: PublishRelay<String> = PublishRelay<String>()
 print(behaviorRelay.value)
 /*:
- [Next](RxSwiftStudy)
+ [Next](Debounce)
  */

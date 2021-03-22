@@ -46,7 +46,33 @@
  ----
  - Important:
  __4주차 - Operators 2__
- ### 준비중입니다.
+ ## Filtering Observables
+ 
+ * [Debounce](Debounce)
+ * [Throttle](Throttle)
+ * [DistinctUntilChanged](DistinctUntilChanged)
+ * [ElementAt](ElementAt)
+ * [Filter](Filter)
+ * [First](First)
+ * [IgnoreElements](IgnoreElements)
+ * [Sample](Sample)
+ * [Skip](Skip)
+ * [SkipWhile](SkipWhile)
+ * [SkipUntil](SkipUntil)
+ * [Take](Take)
+ * [TakeWhile](TakeWhile)
+ * [TakeUntil](TakeUntil)
+ 
+ ## Combining Observables
+ 
+ * [CombineLatest](CombineLatest)
+ * [withLatestFrom](withLatestFrom)
+ * [Merge](Merge)
+ * [SwitchLatest](SwitchLatest)
+ * [Zip](Zip)
+ * [Concat](Concat)
+ * [Amb](Amb)
+ * [StartWith](StartWith)
  ----
  - Important:
  __5주차 - Scheduler, Error Handling__

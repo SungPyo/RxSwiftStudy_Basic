@@ -27,5 +27,27 @@
         <page name='BehaviorSubject'/>
         <page name='ReplaySubject'/>
         <page name='BehaviorRelay'/>
+        <page name='Debounce'/>
+        <page name='Throttle'/>
+        <page name='DistinctUntilChanged'/>
+        <page name='ElementAt'/>
+        <page name='Filter'/>
+        <page name='First'/>
+        <page name='IgnoreElements'/>
+        <page name='Sample'/>
+        <page name='Skip'/>
+        <page name='SkipWhile'/>
+        <page name='SkipUntil'/>
+        <page name='Take'/>
+        <page name='TakeWhile'/>
+        <page name='TakeUntil'/>
+        <page name='CombineLatest'/>
+        <page name='WithLatestFrom'/>
+        <page name='Merge'/>
+        <page name='SwitchLatest'/>
+        <page name='Zip'/>
+        <page name='Concat'/>
+        <page name='Amb'/>
+        <page name='StartWith'/>
     </pages>
 </playground>
