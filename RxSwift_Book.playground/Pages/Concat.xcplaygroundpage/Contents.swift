@@ -13,6 +13,8 @@ let concatObservable = Observable.concat(first,second)
 concatObservable
     .subscribe(onNext: { ob in
         print("방출 = \(ob)")
+    }, onCompleted: {
+        print("c")
     })
     .disposed(by: disposeBag)
 

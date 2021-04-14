@@ -29,3 +29,22 @@ second.onNext(8)
  
  [Next](StartWith)
  */
+
+func loadList() -> Observable<[String]> {
+    print("Thread.isMainThread = \(Thread.isMainThread)")
+    return Observable.just(["1","2","3"])
+}
+DispatchQueue.global().async {
+    let todoObservable: Observable<[String]> = loadList()
+
+    todoObservable
+        // 2. observable을 background에서 생성.
+        .subscribe(on: MainScheduler.instance)
+//        .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .default))
+        // 3. 이후부터는 main에서 처리하도록 함.
+        .observe(on: MainScheduler.asyncInstance)
+        .subscribe(onNext: { todoList in
+            print("Todo: \(todoList)")
+        })
+        .disposed(by: disposeBag)
+}

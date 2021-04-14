@@ -9,18 +9,18 @@ let throttleObservable: Observable<Int> = Observable.create { observer -> Dispos
     let numbers = [1,2,3,4,5]
     numbers.forEach { number in
         DispatchQueue(label: "Debounce").asyncAfter(deadline: DispatchTime.now() + Double(number)) {
-            print("들어온 이벤트! = \(number)")
+            print("들어온 이벤트! = \(number) \(Date())")
             observer.onNext(number)
         }
     }
     return Disposables.create()
-}
+}.share()
 
 throttleObservable
-    .throttle(.milliseconds(2000),
+    .throttle(.milliseconds(3800),
               scheduler: MainScheduler.asyncInstance)
     .subscribe(onNext: { number in
-        print("방출 = \(number)")
+        print("방출 = \(number) \(Date())")
     })
     .disposed(by: disposeBag)
 

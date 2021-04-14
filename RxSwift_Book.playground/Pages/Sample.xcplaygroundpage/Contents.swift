@@ -9,7 +9,7 @@ let sampleObservable: Observable = Observable.from([1,2,3,4,5])
 let sampleTriggerObservable: Observable = Observable.from([(),(),(),()])
 
 sampleObservable
-    .sample(sampleTriggerObservable, defaultValue: 4)
+    .sample(sampleTriggerObservable)
     .subscribe(onNext: { number in
         print("방출 = \(number)")
     })
