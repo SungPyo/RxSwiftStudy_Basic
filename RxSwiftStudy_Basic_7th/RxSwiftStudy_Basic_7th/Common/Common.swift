@@ -5,8 +5,18 @@
 //  Created by Pyo Cho on 2021/04/09.
 //
 
+
 import UIKit
 import RxSwift
+
+extension Array {
+    subscript (safe index: Int) -> Element {
+        if index <= .zero {
+            return self[indices.last!]
+        }
+        return indices ~= index ? self[index] : self[.zero]
+    }
+}
 
 extension NSObject {
     public class var className: String {

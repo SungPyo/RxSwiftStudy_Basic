@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5905D722261F5E4D00FF1D7B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905D721261F5E4D00FF1D7B /* MainViewModel.swift */; };
 		5905D726261F7BEF00FF1D7B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905D725261F7BEF00FF1D7B /* Common.swift */; };
+		5930E6002630A284006EEA41 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5930E5FF2630A284006EEA41 /* DetailViewModel.swift */; };
 		59D49497262F08960085CFC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D49496262F08960085CFC4 /* APIService.swift */; };
 		59D4949F262F23240085CFC4 /* HTTPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D4949E262F23240085CFC4 /* HTTPCode.swift */; };
 		59D494A4262F23590085CFC4 /* GetMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D494A3262F23590085CFC4 /* GetMusic.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		5905D721261F5E4D00FF1D7B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		5905D725261F7BEF00FF1D7B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		5930E5FF2630A284006EEA41 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		59D49496262F08960085CFC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		59D4949E262F23240085CFC4 /* HTTPCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCode.swift; sourceTree = "<group>"; };
 		59D494A3262F23590085CFC4 /* GetMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMusic.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				5905D721261F5E4D00FF1D7B /* MainViewModel.swift */,
 				59E5E3F4261E0A4000809BF0 /* MainViewController.swift */,
 				59D494BB262F32620085CFC4 /* DetailViewController.swift */,
+				5930E5FF2630A284006EEA41 /* DetailViewModel.swift */,
 			);
 			path = RxSwiftStudy_Basic_7th;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				59D494BC262F32620085CFC4 /* DetailViewController.swift in Sources */,
 				59DEF99F262DF9F800BFDD55 /* MusicCell.swift in Sources */,
 				59E5E3F6261E0A4000809BF0 /* MainViewController.swift in Sources */,
+				5930E6002630A284006EEA41 /* DetailViewModel.swift in Sources */,
 				59D494A4262F23590085CFC4 /* GetMusic.swift in Sources */,
 				59D4949F262F23240085CFC4 /* HTTPCode.swift in Sources */,
 				5905D726261F7BEF00FF1D7B /* Common.swift in Sources */,

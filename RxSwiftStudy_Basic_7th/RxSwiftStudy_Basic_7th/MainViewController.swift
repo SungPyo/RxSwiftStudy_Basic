@@ -27,11 +27,12 @@ public final class MainViewController: UIViewController {
     private func bind() {
         let input = MainViewModelType.Input(fetch: searchBar.rx.text.asObservable())
         let output = viewModel.transform(input: input)
-
-        tableView.rx.modelSelected(MusicInfo.self)
-            .flatMapLatest { [weak self] _ -> Observable<Void> in
+        
+        tableView.rx.itemSelected.withLatestFrom(output.model) { ($0, $1) }
+            .flatMapLatest { [weak self] (indexPath, models) -> Observable<Void> in
                 guard let self = self else { return .empty() }
-                return DetailViewController.createInstance(data: ())
+                let dependency = DetailViewModelType.Dependency(indexPath: indexPath, musicInfos: models)
+                return DetailViewController.createInstance(data: DetailViewModel(dependency: dependency))
                     .present(withPresenter: self)
             }
             .subscribe(onNext: {

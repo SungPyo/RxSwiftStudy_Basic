@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -52,26 +53,105 @@
         <scene sceneID="D0m-A7-1Ky">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="9WF-Nv-c3J" customClass="DetailViewController" customModule="RxSwiftStudy_Basic_7th" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tX1-OE-wcC">
+                    <view key="view" contentMode="scaleToFill" id="DDl-Dm-hDC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="디테일 화면입니다?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-Tr-Ohy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-59-HXd">
+                                <rect key="frame" x="20" y="94" width="374" height="522"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UB1-YV-jNZ">
+                                        <rect key="frame" x="28" y="0.0" width="318" height="318"/>
+                                        <color key="backgroundColor" red="0.90588235289999997" green="0.1960784314" blue="0.34509803919999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UB1-YV-jNZ" secondAttribute="height" multiplier="1:1" id="UL0-6w-pME"/>
+                                        </constraints>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-6H-obe">
+                                        <rect key="frame" x="26" y="334" width="322" height="31"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dbL-H5-acL">
+                                        <rect key="frame" x="28" y="380" width="318" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfh-0Q-X6p">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-:-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccJ-pt-6Xg">
+                                                <rect key="frame" x="300" y="0.0" width="18" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="그건 아마 우리의 잘못은 아닐 거야" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TET-bW-HNJ">
+                                        <rect key="frame" x="28" y="414" width="318" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.90588235289999997" green="0.1960784314" blue="0.34509803919999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="R00-cp-OfZ">
+                                        <rect key="frame" x="113" y="454" width="148.5" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-OI-2QZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="backward.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-mt-0wM">
+                                                <rect key="frame" x="65" y="0.0" width="18.5" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                                <state key="selected" image="stop.fill" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8X-eA-9ap">
+                                                <rect key="frame" x="117.5" y="0.0" width="31" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <imageReference key="image" image="forward.fill" catalog="system" symbolScale="large"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-nv-Yxh">
+                                        <rect key="frame" x="26" y="492" width="322" height="31"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gMd-6H-obe" firstAttribute="width" secondItem="UB1-YV-jNZ" secondAttribute="width" id="LlY-BI-rXF"/>
+                                    <constraint firstItem="Pcd-nv-Yxh" firstAttribute="width" secondItem="TET-bW-HNJ" secondAttribute="width" id="gSg-zm-WFi"/>
+                                    <constraint firstItem="TET-bW-HNJ" firstAttribute="width" secondItem="gMd-6H-obe" secondAttribute="width" id="keC-Bd-ZWn"/>
+                                    <constraint firstItem="UB1-YV-jNZ" firstAttribute="width" secondItem="JQR-59-HXd" secondAttribute="width" multiplier="0.85" id="lJG-jZ-vTM"/>
+                                    <constraint firstItem="dbL-H5-acL" firstAttribute="width" secondItem="UB1-YV-jNZ" secondAttribute="width" id="w7K-6B-Hrb"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2rc-II-qYs"/>
+                        <viewLayoutGuide key="safeArea" id="Sz6-zI-aZR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2rc-II-qYs" firstAttribute="trailing" secondItem="GqM-Tr-Ohy" secondAttribute="trailing" id="4Ch-aP-n7M"/>
-                            <constraint firstItem="GqM-Tr-Ohy" firstAttribute="top" secondItem="2rc-II-qYs" secondAttribute="top" id="5xI-QI-wLf"/>
-                            <constraint firstItem="2rc-II-qYs" firstAttribute="bottom" secondItem="GqM-Tr-Ohy" secondAttribute="bottom" id="K7I-A4-Z8t"/>
-                            <constraint firstItem="GqM-Tr-Ohy" firstAttribute="leading" secondItem="2rc-II-qYs" secondAttribute="leading" id="lE6-kW-Lr4"/>
+                            <constraint firstItem="JQR-59-HXd" firstAttribute="leading" secondItem="Sz6-zI-aZR" secondAttribute="leading" constant="20" id="B8m-Xo-lGG"/>
+                            <constraint firstItem="JQR-59-HXd" firstAttribute="top" secondItem="Sz6-zI-aZR" secondAttribute="top" constant="50" id="FJH-6Q-I99"/>
+                            <constraint firstAttribute="trailing" secondItem="JQR-59-HXd" secondAttribute="trailing" constant="20" id="PR9-JW-kOa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="UB1-YV-jNZ" id="5Hv-Ag-OCO"/>
+                        <outlet property="nextButton" destination="l8X-eA-9ap" id="ik4-N1-gWr"/>
+                        <outlet property="playButton" destination="fpu-mt-0wM" id="COc-XD-Q9S"/>
+                        <outlet property="prevButton" destination="7GR-OI-2QZ" id="wsW-YY-N6v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="act-UM-g7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,6 +177,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <image name="forward.fill" catalog="system" width="128" height="79"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

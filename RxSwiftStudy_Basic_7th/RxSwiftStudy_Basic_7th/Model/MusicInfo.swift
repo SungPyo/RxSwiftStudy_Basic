@@ -11,10 +11,12 @@ struct MusicInfo {
     let artistName: String?
     let trackName : String?
     let imgUrl    : URL?
+    let previewUrl: URL
     
     init(_ json: [String: Any]) {
         artistName = json["artistName"] as? String
         trackName = json["trackName"] as? String
         imgUrl = (json["artworkUrl100"] as? String).flatMap {URL(string: $0)}
+        previewUrl = URL(string: (json["previewUrl"] as! String))!
     }
 }
