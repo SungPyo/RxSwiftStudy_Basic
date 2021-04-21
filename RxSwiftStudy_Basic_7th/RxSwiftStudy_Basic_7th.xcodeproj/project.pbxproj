@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		5905D722261F5E4D00FF1D7B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905D721261F5E4D00FF1D7B /* MainViewModel.swift */; };
 		5905D726261F7BEF00FF1D7B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5905D725261F7BEF00FF1D7B /* Common.swift */; };
-		595E4B272624A3DB005656E4 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = 595E4B262624A3DB005656E4 /* restaurants.json */; };
-		595E4B2B2624A4FB005656E4 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595E4B2A2624A4FB005656E4 /* Restaurants.swift */; };
-		595E4B2F2624B11F005656E4 /* RestaurantsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595E4B2E2624B11F005656E4 /* RestaurantsListViewModel.swift */; };
+		59D49497262F08960085CFC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D49496262F08960085CFC4 /* APIService.swift */; };
+		59D4949F262F23240085CFC4 /* HTTPCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D4949E262F23240085CFC4 /* HTTPCode.swift */; };
+		59D494A4262F23590085CFC4 /* GetMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D494A3262F23590085CFC4 /* GetMusic.swift */; };
+		59D494BC262F32620085CFC4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D494BB262F32620085CFC4 /* DetailViewController.swift */; };
+		59DEF994262DF89A00BFDD55 /* MusicInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DEF993262DF89A00BFDD55 /* MusicInfo.swift */; };
+		59DEF99F262DF9F800BFDD55 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DEF99D262DF9F800BFDD55 /* MusicCell.swift */; };
+		59DEF9A0262DF9F800BFDD55 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59DEF99E262DF9F800BFDD55 /* MusicCell.xib */; };
 		59E5E3E3261E09A200809BF0 /* RxSwiftStudy_Basic_7th.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E5E3E1261E09A200809BF0 /* RxSwiftStudy_Basic_7th.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59E5E3F6261E0A4000809BF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E5E3F4261E0A4000809BF0 /* MainViewController.swift */; };
 		59E5E3FA261E0A6100809BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E5E3F9261E0A6100809BF0 /* Main.storyboard */; };
@@ -21,9 +25,13 @@
 /* Begin PBXFileReference section */
 		5905D721261F5E4D00FF1D7B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		5905D725261F7BEF00FF1D7B /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		595E4B262624A3DB005656E4 /* restaurants.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = restaurants.json; path = RxSwiftStudy_Basic_7th/restaurants.json; sourceTree = SOURCE_ROOT; };
-		595E4B2A2624A4FB005656E4 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
-		595E4B2E2624B11F005656E4 /* RestaurantsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListViewModel.swift; sourceTree = "<group>"; };
+		59D49496262F08960085CFC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		59D4949E262F23240085CFC4 /* HTTPCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCode.swift; sourceTree = "<group>"; };
+		59D494A3262F23590085CFC4 /* GetMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMusic.swift; sourceTree = "<group>"; };
+		59D494BB262F32620085CFC4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		59DEF993262DF89A00BFDD55 /* MusicInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfo.swift; sourceTree = "<group>"; };
+		59DEF99D262DF9F800BFDD55 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		59DEF99E262DF9F800BFDD55 /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
 		59E5E3DE261E09A200809BF0 /* RxSwiftStudy_Basic_7th.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwiftStudy_Basic_7th.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E5E3E1261E09A200809BF0 /* RxSwiftStudy_Basic_7th.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxSwiftStudy_Basic_7th.h; sourceTree = "<group>"; };
 		59E5E3E2261E09A200809BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +64,6 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		5905D720261F5E2B00FF1D7B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				5905D721261F5E4D00FF1D7B /* MainViewModel.swift */,
-				595E4B2E2624B11F005656E4 /* RestaurantsListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		5905D724261F7BE600FF1D7B /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +72,38 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		5930E5F226305668006EEA41 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				59E5E3E1261E09A200809BF0 /* RxSwiftStudy_Basic_7th.h */,
+				59E5E3E2261E09A200809BF0 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		595E4B292624A4EF005656E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				595E4B2A2624A4FB005656E4 /* Restaurants.swift */,
+				59DEF993262DF89A00BFDD55 /* MusicInfo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		59D49495262F05F40085CFC4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				59D49496262F08960085CFC4 /* APIService.swift */,
+				59D4949E262F23240085CFC4 /* HTTPCode.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		59D494A1262F23430085CFC4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				59D494A3262F23590085CFC4 /* GetMusic.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		59E5E3D4261E09A200809BF0 = {
@@ -102,14 +127,15 @@
 		59E5E3E0261E09A200809BF0 /* RxSwiftStudy_Basic_7th */ = {
 			isa = PBXGroup;
 			children = (
-				595E4B262624A3DB005656E4 /* restaurants.json */,
+				5930E5F226305668006EEA41 /* Support */,
+				59D494A1262F23430085CFC4 /* API */,
+				59D49495262F05F40085CFC4 /* Service */,
 				595E4B292624A4EF005656E4 /* Model */,
 				5905D724261F7BE600FF1D7B /* Common */,
-				5905D720261F5E2B00FF1D7B /* ViewModel */,
 				59E5E3F3261E0A2E00809BF0 /* View */,
-				59E5E3E1261E09A200809BF0 /* RxSwiftStudy_Basic_7th.h */,
-				59E5E3E2261E09A200809BF0 /* Info.plist */,
-				59E5E3F9261E0A6100809BF0 /* Main.storyboard */,
+				5905D721261F5E4D00FF1D7B /* MainViewModel.swift */,
+				59E5E3F4261E0A4000809BF0 /* MainViewController.swift */,
+				59D494BB262F32620085CFC4 /* DetailViewController.swift */,
 			);
 			path = RxSwiftStudy_Basic_7th;
 			sourceTree = "<group>";
@@ -117,7 +143,9 @@
 		59E5E3F3261E0A2E00809BF0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				59E5E3F4261E0A4000809BF0 /* MainViewController.swift */,
+				59E5E3F9261E0A6100809BF0 /* Main.storyboard */,
+				59DEF99D262DF9F800BFDD55 /* MusicCell.swift */,
+				59DEF99E262DF9F800BFDD55 /* MusicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,8 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595E4B272624A3DB005656E4 /* restaurants.json in Resources */,
 				59E5E3FA261E0A6100809BF0 /* Main.storyboard in Resources */,
+				59DEF9A0262DF9F800BFDD55 /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,11 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595E4B2B2624A4FB005656E4 /* Restaurants.swift in Sources */,
+				59D494BC262F32620085CFC4 /* DetailViewController.swift in Sources */,
+				59DEF99F262DF9F800BFDD55 /* MusicCell.swift in Sources */,
 				59E5E3F6261E0A4000809BF0 /* MainViewController.swift in Sources */,
+				59D494A4262F23590085CFC4 /* GetMusic.swift in Sources */,
+				59D4949F262F23240085CFC4 /* HTTPCode.swift in Sources */,
 				5905D726261F7BEF00FF1D7B /* Common.swift in Sources */,
 				5905D722261F5E4D00FF1D7B /* MainViewModel.swift in Sources */,
-				595E4B2F2624B11F005656E4 /* RestaurantsListViewModel.swift in Sources */,
+				59D49497262F08960085CFC4 /* APIService.swift in Sources */,
+				59DEF994262DF89A00BFDD55 /* MusicInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +413,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RxSwiftStudy_Basic_7th/Info.plist;
+				INFOPLIST_FILE = RxSwiftStudy_Basic_7th/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,7 +440,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RxSwiftStudy_Basic_7th/Info.plist;
+				INFOPLIST_FILE = RxSwiftStudy_Basic_7th/Support/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

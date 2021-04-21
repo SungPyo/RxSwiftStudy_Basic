@@ -45,7 +45,3 @@ class ViewController: UIViewController {
     }
 }
 
-extension Reactive where Base: UIViewController {
-    
-}
-

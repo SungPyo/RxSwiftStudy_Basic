@@ -18,6 +18,15 @@ extension NSObject {
     }
 }
 
+protocol ViewModelType {
+    associatedtype Input
+    associatedtype Output
+    associatedtype Dependency
+    var dependency: Dependency { get }
+    var output: Output! { get }
+    func transform(input: Input) -> Output
+}
+
 public protocol VCDependency: AnyObject {
     associatedtype Dependency
     static var storyboardName: String { get }
@@ -35,12 +44,11 @@ extension VCDependency {
     }
 }
 
-public protocol VCStream where Self: UIViewController {
-    associatedtype T
-}
+public protocol VCStream where Self: UIViewController {}
 
 extension VCStream {
-    public func present(withPresenter presenter: UIViewController, style: UIModalPresentationStyle = .fullScreen) -> Observable<Void> {
+    public func present(withPresenter presenter: UIViewController,
+                        style: UIModalPresentationStyle = .automatic) -> Observable<Void> {
         return Observable<Void>.create { [unowned self] observer -> Disposable in
             self.modalPresentationStyle = style
             presenter.present(self, animated: true) {

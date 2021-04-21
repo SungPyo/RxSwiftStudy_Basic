@@ -16,39 +16,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ALb-ug-Ejz">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aaU-Be-tXt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ALb-ug-Ejz">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="I24-Ps-kMy">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I24-Ps-kMy" id="yRx-II-b45">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xvv-ez-6tq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ALb-ug-Ejz" firstAttribute="leading" secondItem="xvv-ez-6tq" secondAttribute="leading" id="8CA-KW-v9p"/>
+                            <constraint firstItem="aaU-Be-tXt" firstAttribute="leading" secondItem="xvv-ez-6tq" secondAttribute="leading" id="8ej-uP-l1Z"/>
                             <constraint firstItem="xvv-ez-6tq" firstAttribute="bottom" secondItem="ALb-ug-Ejz" secondAttribute="bottom" id="Jq8-MN-MS7"/>
+                            <constraint firstItem="ALb-ug-Ejz" firstAttribute="top" secondItem="aaU-Be-tXt" secondAttribute="bottom" id="W18-eG-KEw"/>
+                            <constraint firstItem="aaU-Be-tXt" firstAttribute="top" secondItem="xvv-ez-6tq" secondAttribute="top" id="bjh-c9-xsF"/>
+                            <constraint firstItem="aaU-Be-tXt" firstAttribute="trailing" secondItem="xvv-ez-6tq" secondAttribute="trailing" id="hEi-LG-spt"/>
                             <constraint firstItem="xvv-ez-6tq" firstAttribute="trailing" secondItem="ALb-ug-Ejz" secondAttribute="trailing" id="oRO-C6-Esj"/>
-                            <constraint firstItem="ALb-ug-Ejz" firstAttribute="top" secondItem="xvv-ez-6tq" secondAttribute="top" id="qeJ-dS-LJ7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="asdf" id="kyX-Hq-9YO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="searchBar" destination="aaU-Be-tXt" id="3kr-il-vQH"/>
                         <outlet property="tableView" destination="ALb-ug-Ejz" id="7Pf-0f-AiK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhx-Nm-PVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="111.83035714285714"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="D0m-A7-1Ky">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="9WF-Nv-c3J" customClass="DetailViewController" customModule="RxSwiftStudy_Basic_7th" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tX1-OE-wcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="디테일 화면입니다?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-Tr-Ohy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2rc-II-qYs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2rc-II-qYs" firstAttribute="trailing" secondItem="GqM-Tr-Ohy" secondAttribute="trailing" id="4Ch-aP-n7M"/>
+                            <constraint firstItem="GqM-Tr-Ohy" firstAttribute="top" secondItem="2rc-II-qYs" secondAttribute="top" id="5xI-QI-wLf"/>
+                            <constraint firstItem="2rc-II-qYs" firstAttribute="bottom" secondItem="GqM-Tr-Ohy" secondAttribute="bottom" id="K7I-A4-Z8t"/>
+                            <constraint firstItem="GqM-Tr-Ohy" firstAttribute="leading" secondItem="2rc-II-qYs" secondAttribute="leading" id="lE6-kW-Lr4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="act-UM-g7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tDh-om-VsT">
