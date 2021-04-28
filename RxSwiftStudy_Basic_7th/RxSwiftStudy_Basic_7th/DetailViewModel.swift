@@ -23,12 +23,16 @@ class DetailViewModelType: ViewModelType {
         let playButton: Observable<Void>
         let nextButton: Observable<Void>
         let prevButton: Observable<Void>
+        let changedVolume: Observable<Float>
     }
     
     struct Output {
         let currentMusic: Observable<MusicInfo>
         let currentPlayer: Observable<AVPlayer>
         let changePlayer: Observable<()>
+        let seekValue: Observable<Float>
+        let currentVolume: Observable<Float>
+        let durationValue: Observable<Float>
     }
     
     public init(dependency: Dependency) {
@@ -41,8 +45,12 @@ class DetailViewModelType: ViewModelType {
 }
 
 final class DetailViewModel: DetailViewModelType {
-    private let avPlayer: AVPlayer = AVPlayer()
+    private let avPlayer: AVPlayer = {
+        let player = AVPlayer()
+        return player
+    }()
     private let currentIndex: BehaviorSubject<Int> = BehaviorSubject<Int>(value: .zero)
+    private let disposeBag: DisposeBag = DisposeBag()
     
     override func transform(input: Input) -> Output {
         
@@ -64,6 +72,17 @@ final class DetailViewModel: DetailViewModelType {
                 return self.avPlayer
             }
         
+        let seekValue = Observable<Int>
+            .interval(.milliseconds(500), scheduler: MainScheduler.instance)
+            .map { [weak self] _ -> Float in
+                guard let self = self else { return .zero }
+                return Float(CMTimeGetSeconds(self.avPlayer.currentTime()) / CMTimeGetSeconds(self.avPlayer.currentItem?.duration ?? .zero))
+            }
+        
+        input.changedVolume
+            .bind(to: self.avPlayer.rx.volume)
+            .disposed(by: disposeBag)
+
         let nextPlayer = input.nextButton
             .withLatestFrom(currentIndex)
             .compactMap { [weak self] index -> Int? in
@@ -97,9 +116,25 @@ final class DetailViewModel: DetailViewModelType {
             })
             .map { _ in}
         
+        let currentVolume = currentPlayer
+            .map {$0.volume}
+        
+        let durationValue = currentMusic
+            .compactMap { [weak self] _ -> CMTime? in
+                self?.avPlayer.currentItem?.duration
+            }
+            .map { Float(CMTimeGetSeconds($0)) }
+        
+//        let durationValue = currentPlayer
+//            .compactMap { $0.currentItem?.duration }
+//            .map { Float(CMTimeGetSeconds($0)) }
+        
         return Output(currentMusic: currentMusic,
                       currentPlayer: currentPlayer,
-                      changePlayer: changePlayer)
+                      changePlayer: changePlayer,
+                      seekValue: seekValue,
+                      currentVolume: currentVolume,
+                      durationValue: durationValue)
     }
     
     private func calcIndex(index: Int) -> Int {

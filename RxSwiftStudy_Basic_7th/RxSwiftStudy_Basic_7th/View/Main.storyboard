@@ -67,7 +67,7 @@
                                             <constraint firstAttribute="width" secondItem="UB1-YV-jNZ" secondAttribute="height" multiplier="1:1" id="UL0-6w-pME"/>
                                         </constraints>
                                     </imageView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-6H-obe">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-6H-obe">
                                         <rect key="frame" x="26" y="334" width="322" height="31"/>
                                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </slider>
@@ -148,9 +148,12 @@
                     </view>
                     <connections>
                         <outlet property="albumImageView" destination="UB1-YV-jNZ" id="5Hv-Ag-OCO"/>
+                        <outlet property="durationLabel" destination="ccJ-pt-6Xg" id="7Cw-zq-2Ig"/>
                         <outlet property="nextButton" destination="l8X-eA-9ap" id="ik4-N1-gWr"/>
                         <outlet property="playButton" destination="fpu-mt-0wM" id="COc-XD-Q9S"/>
                         <outlet property="prevButton" destination="7GR-OI-2QZ" id="wsW-YY-N6v"/>
+                        <outlet property="seekSlider" destination="gMd-6H-obe" id="USS-8D-teL"/>
+                        <outlet property="volumeSlider" destination="Pcd-nv-Yxh" id="7sD-oV-Uli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="act-UM-g7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
